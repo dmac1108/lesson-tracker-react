@@ -1,14 +1,17 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import '../Nav/Nav.css';
 
 function Nav(){
     return(
         <nav>
-            <a href="./landing-page.html"><h1>Lesson Tracker</h1></a>
-            <div id="hamburger" ><img src="./assets/icons8-menu-64.png" class="hamburger"/></div>
+            <Link to="/"><h1>Lesson Tracker</h1></Link>
+            
+            <div id="hamburger" ><img alt="Hamburger Menu Icon" src={require('../../assets/icons8-menu-64.png')} className="hamburger"/></div>
             <ul>
                 <li><a href="./lessons-listview.html">Lessons</a></li>
-                <li><a href="./register.html">Register</a></li>
-                <li><a href="./login.html">Log In</a></li>
+                <li><Link to="/register">Register</Link></li>
+                <li><Link to="/login">Log In</Link></li>
             </ul>
         </nav>
     );
