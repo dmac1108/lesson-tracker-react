@@ -1,3 +1,9 @@
+body{
+    font-family: Arial, Helvetica, sans-serif ;
+    color: #59564e;
+    font-size: 20px;
+}
+
 a:link{
     color: #e5d2a9;
     text-decoration: none;

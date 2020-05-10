@@ -3,6 +3,8 @@ import React from 'react';
 function Register(){
     return(
        <form>
+           <fieldset>
+               <legend>Register</legend>
           <ul>
               <li>
                   <label for="first_name">First Name</label>
@@ -25,7 +27,7 @@ function Register(){
                 <button type="reset">Cancel</button>
             </li>
          </ul>
-        
+        </fieldset>
        </form>
 
     );
