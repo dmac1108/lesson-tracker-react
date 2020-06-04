@@ -13,7 +13,7 @@ import AddStudent from '../AddStudent/AddStudent';
 import Settings from '../Settings/Settings';
 
 
-function App() {
+function App(props) {
   return (
     <div>
       <Nav/>
@@ -22,7 +22,7 @@ function App() {
         <Route exact path='/' component={LandingPage}/>
         <Route path='/login' component={Login}/>
         <Route path='/register' component={Register}/>
-        <Route path='/lessons' component={LessonsList}/>
+  <Route path='/lessons' render={(props) => <LessonsList Lessons={props}/>}/>
         <Route path='/add-lesson' component={AddLesson}/>
         <Route path='/add-location' component={AddLocation}/>
         <Route path='/add-student' component={AddStudent}/>

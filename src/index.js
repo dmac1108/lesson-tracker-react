@@ -4,8 +4,10 @@ import {BrowserRouter} from 'react-router-dom';
 import './index.css';
 import App from './Components/App/App';
 
+const DATA = require('./Components/App/STORE.json');
 
-ReactDOM.render(<BrowserRouter><App /></BrowserRouter>,document.getElementById('root')
+
+ReactDOM.render(<BrowserRouter><App DATA={DATA} /></BrowserRouter>,document.getElementById('root')
 );
 
 
